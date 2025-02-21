@@ -1,0 +1,52 @@
+
+.foot {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+    background-color: #006435;
+    height: 12rem;
+    width: 100%;
+        color: white;
+  }
+
+  .contact {
+    flex-wrap: wrap;
+ 
+    display: flex;
+    flex: 1;
+    align-items: center;
+  
+}
+
+  .social-media {
+    display: flex;
+    flex: 1;
+    align-items: center;
+  }
+
+  
+.info_ {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-bottom: 10px;
+}
+
+.buttons_ {
+    display: flex;
+    gap: 1.5rem;
+    font-size: 1.2rem;
+
+}
+
+.buttons_ i {
+    padding: 5px;
+    font-size: 16px;
+    border-radius:100px; 
+    border:solid;
+    color: white;
+}
+
