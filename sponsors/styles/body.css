@@ -1,0 +1,84 @@
+/* Font setup */
+@font-face {
+    font-family: formula;
+    src: url('Formula1-Bold_web_0.ttf'),
+         url('Formula1-Regular_web_0 (1).ttf');
+}
+
+body {
+    font-family: formula;
+    margin: 0;
+    padding: 0;
+}
+
+/* Styling for the row and images */
+.row {
+    display: flex;
+    flex-wrap: wrap; /* Allow items to wrap onto new lines */
+    gap: 10px; /* Spacing between items */
+    justify-content: center; /* Center items */
+    margin: 15px 0;
+}
+
+.block {
+/*    
+flex: 1 1 calc(100% / 7 - 10px); 
+    max-width: calc(100% / 7 - 10px); */
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: center;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
+    margin: 10px; /* Add spacing around blocks */
+}
+
+.block img {
+    height: 100px; /* Default height */
+    max-width: 100%; /* Ensure responsiveness */
+}
+
+/* Container heading */
+.container h1 {
+    display: flex;
+    justify-content: center;
+    font-size: 2rem;
+    margin: 1.5rem 0;
+}
+
+/* Responsive Design */
+
+/* Mobile: 2 columns in a row */
+@media (max-width: 576px) {
+    .block {
+        flex: 1 1 calc(40% - 20px); /* 2 columns on small screens */
+        max-width: calc(40% - 20px); /* Ensure proper width */
+    }
+
+    .block img {
+        height: auto; /* Adjust height for better scaling */
+        width: 100%; /* Fully responsive */
+    }
+}
+@media (min-width: 769px) and (max-width: 1024px) {
+    .block {
+        flex: 1 1 calc(40% - 20px); /* 4 columns */
+        max-width: calc(40% - 20px);
+    }
+}
+/* Medium Screens: Tablets */
+@media (min-width: 577px) and (max-width: 768px) {
+    .block {
+        flex: 1 1 calc(40% - 20px);
+        max-width: calc(40% - 20px);
+    }
+}
+
+/* Larger Tablets and Small Laptops */
+
+
+/* Wide Screens: Desktops */
+@media (min-width: 1025px) {
+    .block {
+        flex: 1 1 calc(100% / 7 - 10px); /* 7 columns */
+        max-width: calc(100% / 7 - 10px);
+    }
+}
